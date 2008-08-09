@@ -35,7 +35,7 @@ current_user.has_favorite_venues?
 To Find:
 current_user.all_favorites  (all favorite referenced objects, blogs, etc)
 current_user.favorite_blogs  (metaprogramming references Blog entries only)
-Blog.find(43).favorite_users (returns users which have the specified blog set as a favorite)
+Blog.find(43).favoriting_users (returns users which have the specified blog set as a favorite)
 
 === Dynamic methods through the Identity mixin
 

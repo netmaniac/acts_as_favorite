@@ -78,7 +78,7 @@ module ActsAsFavorite
     module ClassMethods
       def acts_as_favorite
         has_many :favorites, :as => :favorable
-        has_many :favorite_users, :through => :favorites, :source => :user
+        has_many :favoriting_users, :through => :favorites, :source => :user
 
         # ACA: The original plugin included unnecessary repetitions of the
         # instance method definitions as well as the below include.
